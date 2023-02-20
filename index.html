@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe By Nouri Ayoub</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- main screen start -->
+    <section class="mainSection">
+        <!-- animation fly cars -->
+        <div class="flyCars">
+            <div class="waveWrapper">
+                <div class="traffic1" style="background-image: url('./img/2.png')"></div>
+            </div>
+            <div class="waveWrapper">
+                <div class="traffic2" style="background-image: url('./img/1.png')"></div>
+            </div>
+            <div class="waveWrapper">
+                <div class="traffic3" style="background-image: url('./img/1.png')"></div>
+            </div>
+        </div>
+        <div class="mainWrapp">
+            <!-- result -->
+            <div style="display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px;">
+                <div class="player player1 hide">
+                    <span class="result">Player 1 </span>
+                    <span class="result player1__output" style="margin-left: 20px;">(0)</span>
+                </div>
+                <span class="result status">tic-tac-toe</span>
+                <div class="player player2 hide">
+                    <span class="result">Player 2</span>
+                    <span class="result player2__output" style="margin-left: 20px;">(0)</span>
+                </div>
+            </div>
+            <div class="wrapp">
+                <!-- user interface -->
+                <ul class="gameList list">
+                    <li class="gameItem" data-ceil="1"></li>
+                    <li class="gameItem" data-ceil="2"></li>
+                    <li class="gameItem" data-ceil="3"></li>
+                    <li class="gameItem" data-ceil="4"></li>
+                    <li class="gameItem" data-ceil="5"></li>
+                    <li class="gameItem" data-ceil="6"></li>
+                    <li class="gameItem" data-ceil="7"></li>
+                    <li class="gameItem" data-ceil="8"></li>
+                    <li class="gameItem" data-ceil="9"></li>
+                </ul>
+                <div class="modalWrapp"></div>
+            </div>
+            <!-- play button -->
+            <div class="menu">
+                <button id="play_btn" class="play">1 vs 1</button>
+                <button id="auto_btn" class="autoPlay">Auto</button>
+            </div>
+            <div class="second__menu">
+                <button id="restart_btn" class="play">Restart</button>
+                <button id="main_menu_btn" class="autoPlay">Main Menu</button>
+            </div>
+        </div>
+    </section>
+    <!-- main screen end -->
+    <!-- main music track -->
+    <audio class="music" src="./sounds/MainTrack.mp3"></audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
